@@ -18,18 +18,18 @@ const Header = ({placeholder}) => {
     setEndDate(ranges.selection.endDate);
   };
 
-  const search = () => {
-    router.push({
-      pathname:"/search",
-      query:{
-        location: searchInput,
-        startDate: startDate.toISOString(),
-        endDate:endDate.toISOString(),
-        numberOfGuests
-      }
+  // const search = () => {
+  //   router.push({
+  //     pathname:"/search",
+  //     query:{
+  //       location: searchInput,
+  //       startDate: startDate.toISOString(),
+  //       endDate:endDate.toISOString(),
+  //       numberOfGuests
+  //     }
       
-    })
-  }
+  //   })
+  // }
 
   const resetFunction = ()=> {
     setSearchInput('');

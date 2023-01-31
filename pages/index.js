@@ -56,8 +56,8 @@ export default function Home({ exploreData, largeCardData }) {
 }
 
 export async function getStaticProps() {
-  const res = await axios.get("http://localhost:3000/api/SmallCardData");
-  const response = await axios.get("http://localhost:3000/api/LargeCardData");
+  const res = await axios.get("/api/SmallCardData");
+  const response = await axios.get("/api/LargeCardData");
 
   return {
     props: {

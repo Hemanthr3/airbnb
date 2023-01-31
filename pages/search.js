@@ -85,7 +85,7 @@ export default Search;
 
 export async function getServerSideProps() {
   const searchResult = await axios.get(
-    "http://localhost:3000/api/SearchResultData"
+    "/api/SearchResultData"
   );
 
   return {

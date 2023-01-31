@@ -9,7 +9,7 @@ import React from "react";
 
 const Search = ({searchResult}) => {
   const router = useRouter();
-  // const { location, startDate, endDate, numberOfGuests } = router.query;
+  const { location, startDate, endDate, numberOfGuests } = router.query;
 
   // const formattedStartDate = format(new Date(startDate), "dd MMMM yy");
   // const formattedEndDate = format(new Date(endDate), "dd MMMM yy");

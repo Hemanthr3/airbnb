@@ -28,9 +28,9 @@ console.log("Search location is",coordinate)
 
   return (
     <div>
-      <Header
+      {/* <Header
         placeholder={`${location && location} | ${range && range} | ${numberOfGuests && numberOfGuests} guests`}
-      />
+      /> */}
       <main className="flex">
         <section className="flex-grow pt-14 px-6">
           {/* <p className="text-xs">

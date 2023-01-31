@@ -9,11 +9,11 @@ import React from "react";
 
 const Search = ({searchResult}) => {
   const router = useRouter();
-  const { location, startDate, endDate, numberOfGuests } = router.query;
+  // const { location, startDate, endDate, numberOfGuests } = router.query;
 
-  const formattedStartDate = format(new Date(startDate), "dd MMMM yy");
-  const formattedEndDate = format(new Date(endDate), "dd MMMM yy");
-  const range = `${formattedStartDate} - ${formattedEndDate}`;
+  // const formattedStartDate = format(new Date(startDate), "dd MMMM yy");
+  // const formattedEndDate = format(new Date(endDate), "dd MMMM yy");
+  // const range = `${formattedStartDate} - ${formattedEndDate}`;
 
 //   const coordinate = ()=> {
 //     return(
@@ -54,7 +54,7 @@ const Search = ({searchResult}) => {
               More filters
             </p>
           </div>
-          <div className="flex flex-col">
+          {/* <div className="flex flex-col">
             {searchResult?.data?.map((item)=>(
             <InfoCard 
             key={item.img}
@@ -69,10 +69,10 @@ const Search = ({searchResult}) => {
 
             
           ))}
-          </div>
+          </div> */}
         </section>
         <section className="hidden xl:inline-flex min-w-[600px]">
-            <Map searchResult={searchResult?.data}/>
+            {/* <Map searchResult={searchResult?.data}/> */}
         </section>
       </main>
 

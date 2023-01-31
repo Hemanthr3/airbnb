@@ -55,14 +55,14 @@ export default function Home({ exploreData, largeCardData }) {
   );
 }
 
-// export async function getStaticProps() {
-//   const res = await axios.get("https://www.airbnb.vercel.app/api/SmallCardData");
-//   const response = await axios.get("api/LargeCardData");
+export async function getStaticProps() {
+  const res = await axios.get("https://airbnb-a9ok8nspk-hemanthr3.vercel.app/api/SmallCardData");
+  const response = await axios.get("https://airbnb-a9ok8nspk-hemanthr3.vercel.app/api/LargeCardData");
 
-//   return {
-//     props: {
-//       exploreData: res.data,
-//       largeCardData: response.data,
-//     },
-//   };
-// }
+  return {
+    props: {
+      exploreData: res.data,
+      largeCardData: response.data,
+    },
+  };
+}

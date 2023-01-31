@@ -23,7 +23,7 @@ export default function Home({ exploreData, largeCardData }) {
         <section className="pt-6">
           <h2 className="text-4xl font-semibold pb-5">Explore nearby</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-            {exploreData.data?.map((item) => {
+            {exploreData?.data?.map((item) => {
               return (
                 <SmallCard
                   key={item.location}
@@ -38,7 +38,7 @@ export default function Home({ exploreData, largeCardData }) {
         <section>
           <h2 className="text-4xl font-semibold py-8">Live anywhere</h2>
           <div className="flex space-x-3 overflow-scroll scrollbar-hide p-3 -ml-3">
-            {largeCardData.data?.map((item) => (
+            {largeCardData?.data?.map((item) => (
               <MediumCard key={item.title} title={item.title} img={item.img} />
             ))}
           </div>

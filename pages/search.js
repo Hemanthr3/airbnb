@@ -55,7 +55,7 @@ const Search = ({searchResult}) => {
             </p>
           </div>
           <div className="flex flex-col">
-            {searchResult.data?.map((item)=>(
+            {searchResult?.data?.map((item)=>(
             <InfoCard 
             key={item.img}
             img={item.img}
@@ -72,7 +72,7 @@ const Search = ({searchResult}) => {
           </div>
         </section>
         <section className="hidden xl:inline-flex min-w-[600px]">
-            <Map searchResult={searchResult.data}/>
+            <Map searchResult={searchResult?.data}/>
         </section>
       </main>
 

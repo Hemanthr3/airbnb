@@ -83,14 +83,14 @@ const Search = ({searchResult}) => {
 
 export default Search;
 
-export async function getServerSideProps() {
-  const searchResult = await axios.get(
-    "api/SearchResultData"
-  );
+// export async function getServerSideProps() {
+//   const searchResult = await axios.get(
+//     "https://www.airbnb.vercel.app/api/SearchResultData"
+//   );
 
-  return {
-    props : {
-        searchResult: searchResult.data
-    }
-  }
-}
+//   return {
+//     props : {
+//         searchResult: searchResult.data
+//     }
+//   }
+// }

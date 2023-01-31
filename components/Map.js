@@ -26,11 +26,11 @@ const MapComponent = ({ searchResult }) => {
       mapboxAccessToken={process.env.mapbox_key}
       initialViewState={initialViewState}
     >
-      {searchResult.map((result)=>(
-        <div key={result.long}>
+      {searchResult?.map((result)=>(
+        <div key={result?.long}>
           <Marker
-          longitude={result.long}
-          latitude={result.lat}
+          longitude={result?.long}
+          latitude={result?.lat}
           anchor="bottom"
           >
           <p className="cursor-pointer text-2xl animate-bounce bg-red-700">📌</p>

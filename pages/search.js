@@ -29,14 +29,14 @@ const Search = ({searchResult}) => {
   return (
     <div>
       <Header
-        placeholder={`${location} | ${range} | ${numberOfGuests} guests`}
+        placeholder={`${location && location} | ${range && range} | ${numberOfGuests && numberOfGuests} guests`}
       />
       <main className="flex">
         <section className="flex-grow pt-14 px-6">
           <p className="text-xs">
-            300+ stays - {range} - for {numberOfGuests} guests
+            300+ stays - {range && range} - for {numberOfGuests && numberOfGuests} guests
           </p>
-          <h1 className="text-3xl font-semibold mb-6">Stays in {location}</h1>
+          <h1 className="text-3xl font-semibold mb-6">Stays in {location && location}</h1>
           <div className="hidden lg:inline-flex mb-5 gap-3 text-gray-800 whitespace-nowrap">
             <p className="px-4 py-2 border rounded-full cursor-pointer hover:shadow-lg active:scale-95 active:bg-gray-100 transition transform duration-100 ease-out">
               Cancellation Flexibility

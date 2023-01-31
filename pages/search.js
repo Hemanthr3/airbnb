@@ -85,7 +85,7 @@ export default Search;
 
 export async function getServerSideProps() {
   const searchResult = await axios.get(
-    "/api/SearchResultData"
+    "api/SearchResultData"
   );
 
   return {
